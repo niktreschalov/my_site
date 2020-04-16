@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
-
+/*Стили для страницы*/
 body {
   background-color: #fafafa;
   font-family: Trebuchet MS, Helvetica;
@@ -16,15 +16,15 @@ h2 {
 }
 h3 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 600;
-    margin: 25px 0px 10px 0; 
+    margin: 15px 0px 10px 0;
 }
 
 h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 0.9em;
     color: #000;
 }
 
@@ -41,22 +41,28 @@ h4 a {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 1em;
+    font-size: 0.9em;
     color: #000;
 }
 
 span {
+   display: block;
    font-family: 'Open Sans', sans-serif;
+   font-size: 0.9em; 
    font-weight: 400;
    color: #000;
-    padding-bottom: 10px;
+   padding-bottom: 10px;
 }
 
+/*Стили "Обо мне"*/
+
 #main {
+  display:block;
   float: left;
-  margin: 50px 0 30px 0;
+  margin: 60px 0 40px 0;
   padding: 0 10% 0px 10%;
   width: 80%;
+  /*height: 100%;  */
   text-align: center;
 }
 
@@ -66,7 +72,7 @@ span {
   display:inline-block;
   position: relative;
   width: 500px;
-  height: 300px;
+  height: 600px;
   text-align: left;
   margin: 0 10px 0 10px;;
 }
@@ -78,7 +84,7 @@ span {
 
 #main .imag img {
   float: left;
-  width: 100%;
+  height: 100%;
 }
 
 #main .imag h2 {
@@ -94,10 +100,217 @@ span {
   padding: 0 10px 0 0;
   cursor: pointer;  
 }
+/*Стили "подпись внизу"*/
+#bottom {
+  display:block;
+  position: relative; 
+}
 
-/*
-@media (min-width: 1401px) {
-  #main {
+/*Стили "Портфолио"*/
+#overview {
+  display:inline-block;
+  /*margin: 60px 0 40px 0;*/
+  background-color: #f5f5f5;
+  padding: 2px 0 0 0;
+  width: 100%;
+  text-align: center; 
+}
+
+
+#overview .imag {
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display:inline-block;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+#overview .imag:nth-child(odd) {
+  text-align: center;
+    /*  margin-left: 10%;*/
+}
+
+#overview img {
+  background: #fafafa;
+  float: left;
+  height: 100%;
+}
+
+#overview .imag a {
+  position	: absolute;
+  text-align: center;
+  padding: 45% 0% 45% 0%;
+  text-decoration: none;
+  left		: 0;*/
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #fff;
+  width: 300px;
+}
+
+#overview a:hover {
+      color: #000;
+      outline: 0;
+      opacity: 0.9;
+      background-color: #eee;  
+    }
+
+#overview button.download_price {
+    color: #fff; 
+	background: #324463; 
+	margin: 10px 0 10px 0;
+    padding: 10px 40px 10px 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+	border: 1px #324463;
+    margin-bottom: 20px;
+	} 
+#overview button.download_price:hover { 
+	background: #9facc2;
+    color: #324463;
+    cursor: pointer;
+	}
+/*Стили "Вопросы"*/
+
+#fq {
+  display:block;
+  float: left;
+  background-color: #f5f5f5;
+  padding: 0 10% 100px 10%;
+  width: 80%; 
+}
+
+#video {
+  display:block;
+  background-color: #f5f5f5;
+  padding: 20px 0 0 0;
+  width: 100%;
+  text-align: center;
+}
+#video .content {
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display:inline-block;
+  position: relative;
+  width: 1000px;
+  height: 600px;   
+}
+
+#video .text {
+  display:inline-block;
+  text-align: left;
+  width: 1000px;
+  margin-bottom: 50px;  
+}
+
+#albom {
+  display:block;
+  margin: 60px 0 40px 0;
+  padding: 0 10% 0px 10%;
+  width: 80%;
+  text-align: center;
+  vertical-align:middle;  
+}
+
+#albom .imag {
+  overflow: hidden;
+  justify-content: center;
+  display:inline-block;
+  position: relative;
+  width: 400px;
+  margin: 0 10px 30px 10px;;
+}
+
+#albom .imag img {
+  float: left;
+  width: 400px;
+  height: 250px;
+}
+
+#albom h3 {
+text-align: left;
+    width: 400px;
+}
+#albom .imag a {
+  position: absolute;
+  text-align: center; 
+  text-decoration: none;
+  padding: 112px 0 0 0;
+  left: 0;
+  float: left;
+ font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #fff;
+  width: 400px;
+  height: 250px;
+}
+
+#albom .imag a:hover {
+      color: #000;
+      outline: 0;
+      opacity: 0.9;
+      background-color: #fff;  
+    }
+
+#photo {
+   width: 100%;
+   text-align: center;
+}
+
+#photo .title {
+  width: 100%;
+  text-align: center;  
+}
+
+#photo .title h2{
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+#photo .title span{
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+#photo .photos{
+    display:inline-block;
+    position: relative;
+    max-width: 90%;
+    min-width: 60%;
+    margin: 40px 0 40px 0;
+}
+
+#photo .photos img {
+  text-align: center;
+  margin: 10px;  
+  min-width: 20%;
+  max-width: 70%;
+  max-height: 90vh;
+}
+
+
+/*Стили для экранов 700px*/
+
+@media (max-width: 700px) {
+  
+#main .imag {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  margin: 0 10px 0 10px;;
+}  
+    
+  /*#main {
     padding: 20px 20%;
     width: 60%;
   }
@@ -129,5 +342,42 @@ span {
     font-size: 3em;
 }
 #main span {
-    color: #a0a0a0;
-}/*
+    color: #a0a0a0;*/
+}
+/*Стили для экранов 1401px*/
+
+@media (min-width: 1401px) {
+  /*#main {
+    padding: 20px 20%;
+    width: 60%;
+  }
+}
+
+@media (max-width: 1400px) {
+  #main {
+    padding: 20px 10%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  #main div {
+    width: 98%!important;
+    margin-bottom: 20px;
+  }
+}
+
+#main div {
+  width: 48%;
+  margin-right: 2%;
+  float: left;
+}
+
+#main h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 3em;
+}
+#main span {
+    color: #a0a0a0;*/
+}
